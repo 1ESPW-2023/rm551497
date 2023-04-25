@@ -1,3 +1,5 @@
+<!--//lembrar que chamei o exemplo-cor, e nao linkei nada-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,30 +17,37 @@
     </header>
 
     <div class="container">
+        
         <aside class="l-e">
-            <span>BANNER-E</span>
+           <img src="./img/banner-lateral-1.png" alt="Banner">
         </aside>
+        
         <section class="conteudo">
             <span>CONTEUDO</span>
         </section>
+
         <aside class="l-d">
-            <span>BANNER-D</span>
+            <img src="./img/banner-lateral-2.png" alt="Banner">
         </aside>
+
     </div>
 
     <footer class="rodape">
         <span>RODAPÉ</span>
 
-
         <div>
-            <button onclick="pararTimeOut()">
-                stop
-        </button>
+            <button onclick="mudaCor()">start</button>
+            <button onclick="clearTimeout(tmp)">stop</button>   
+            
+          <!--  <section>
+                
+                    <button>TESTE</button>
+                
+            </section>
+        -->
         </div>
-
-
+        
     </footer>
-    
+
 </body>
 </html>
-
