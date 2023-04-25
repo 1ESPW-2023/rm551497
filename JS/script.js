@@ -1,7 +1,7 @@
 //Exemplo de funções
 
 //pra pegar a tabela do html
-const divElement = document.getElementById("div-box")
+//const divElement = document.getElementById("div-box")
 
         //atrelar um evento
 
@@ -75,4 +75,33 @@ function alteraBanner() {
 
 alteraBanner();
  
- 
+ //aqui é a função do botão lampada no conteudo
+
+ function turnInOff() {
+
+    const imgLampada = document.querySelector(".conteudo img");
+    const btnOnOff = document.querySelector(".conteudo button");
+
+    if(btnOnOff.textContent == "LIGAR"){
+        btnOnOff.textContent = "DESLIGAR";
+        imgLampada.src = "./img/pic_bulbon.gif";
+    }else{
+        btnOnOff.textContent = "LIGAR";
+        imgLampada.src = "./img/pic_bulboff.gif";
+    }
+}
+
+//facilitando o codigo de cima e deixando mais limpo:
+
+const btnOnOff = document.querySelector(".conteudo button");
+
+btnOnOff.addEventListener("click", ()=>{
+    const imgLampada = document.querySelector(".conteudo img");
+    if(btnOnOff.textContent == "LIGAR"){
+        btnOnOff.textContent = "DESLIGAR";
+        imgLampada.src = "./img/pic_bulbon.gif";
+    }else{
+        btnOnOff.textContent = "LIGAR";
+        imgLampada.src = "./img/pic_bulboff.gif";
+    }
+});
